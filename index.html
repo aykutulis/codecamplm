@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LeadMark</title>
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/1c7d5f24eb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!-- Progress Bar -->
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+  <script>
+    window.onscroll = function() {
+      myFunction()
+    };
+
+    function myFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
+    }
+  </script>
+
+  <!-- Title Section -->
+  <section id="title">
+    <div class="container-fluid title-container">
+      <img src="images/logo-header.png" alt="logo-image">
+      <div class="title-row row">
+        <div class="col-lg-6">
+          <span class="call-us-span colored-span">CALL US: 0123456789</span>
+          <h1 class="big-heading">Get Best<br />Business Dead</h1>
+          <p>This should be used to tell a story and let your users know a little more about your product or service. How can you benefit them?</p>
+          <form class="row title-form">
+            <i class="envelope-icon fas fa-envelope"></i>
+            <input class="form-control col-7 email-input" type="email" name="email" placeholder="Your Email Here">
+            <input class="form-control col-5 btn-primary btn btn-title" type="submit" value="CALL TO ACTION">
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content Section -->
+  <section id="content">
+    <div class="container-fluid content-container">
+      <div class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="card carousel-card">
+                  <hr class="orange-bar">
+                  <div class="card-content">
+                    <div class="card-body">
+                      <img src="images/box-info-1/icon-1.png" alt="box-icon-1">
+                      <h5 class="card-title card-heading">Best Web Solution</h5>
+                      <p class="card-text">This should be used to tell a story and talk about your product or service.</p>
+                      <span class="solution-span colored-span">IT SOLUTION</span><span class="solution-span colored-span">WEB DESIGN</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="card carousel-card">
+                  <hr class="green-bar">
+                  <div class="card-content">
+                    <div class="card-body">
+                      <img src="images/box-info-1/icon-2.png" alt="box-icon-2">
+                      <h5 class="card-title card-heading">Save Your Money</h5>
+                      <p class="card-text">This should be used to tell a story and talk about your product or service.</p>
+                      <span class="money-span colored-span">BEST INVEST</span><span class="money-span colored-span">SAFETY PAY</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="card carousel-card">
+                  <hr class="blue-bar">
+                  <div class="card-content">
+                    <div class="card-body">
+                      <img src="images/box-info-1/icon-3.png" alt="box-icon-3">
+                      <h5 class="card-title card-heading">Best Mobile Applications</h5>
+                      <p class="card-text">This should be used to tell a story and talk about your product or service.</p>
+                      <span class="app-span colored-span">ANDROID</span><span class="app-span colored-span">IOS</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="card carousel-card">
+                  <hr class="pink-bar">
+                  <div class="card-content">
+                    <div class="card-body">
+                      <img src="images/box-info-1/icon-4.png" alt="box-icon-4">
+                      <h5 class="card-title card-heading">Accurate Web Analytics</h5>
+                      <p class="card-text">This should be used to tell a story and talk about your product or service.</p>
+                      <span class="analytics-span colored-span">SEO</span><span class="analytics-span colored-span">MARKETTING</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Press Section -->
+  <section id="press">
+    <div class="container-fluid press-container">
+      <p class="press-p">Trusted by the world’s most innovative businesses – big and small</p>
+      <img class="press-icon" src="images/press/img-1.png" alt="img-1.png">
+      <img class="press-icon" src="images/press/img-2.png" alt="img-2.png">
+      <img class="press-icon" src="images/press/img-3.png" alt="img-3.png">
+      <img class="press-icon" src="images/press/img-4.png" alt="img-4.png">
+      <img class="press-icon" src="images/press/img-5.png" alt="img-5.png">
+      <img class="press-icon" src="images/press/img-6.png" alt="img-6.png">
+    </div>
+  </section>
+
+  <!-- Content 2 -->
+  <section id="content-2">
+    <div class="container-fluid content-2-container">
+      <div class="row">
+        <div class="featured-col-image featured-col featured-col-pc col-lg-6">
+          <img class="featured-image" src="images/featured-img-1.png" alt="featured-img-1">
+        </div>
+        <div class="featured-col col-lg-6">
+          <img class="st-icon" src="images/section-title-icons/icon-1.png" alt="sti-1">
+          <h3 class="featured-pricing-heading">Best Web Solution</h3>
+          <p>This should be used to tell a story and let your users know a little more about your product or service. How can you benefit them?</p>
+        </div>
+        <div class="featured-col-image featured-col featured-col-mobile col-lg-6">
+          <img class="featured-image" src="images/featured-img-1.png" alt="featured-img-1">
+        </div>
+        <div class="featured-col col-lg-6">
+          <img class="st-icon" src="images/section-title-icons/icon-2.png" alt="sti-2">
+          <h3 class="featured-pricing-heading">Save Your Money</h3>
+          <p>This should be used to tell a story and let your users know a little more about your product or service. How can you benefit them?</p>
+        </div>
+        <div class="featured-col-image featured-col col-lg-6">
+          <img class="featured-image" src="images/featured-img-2.png" alt="featured-img-2">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing">
+    <div class="container-fluid pricing-table-container">
+      <img class="st-icon" src="images/section-title-icons/icon-3.png" alt="sti-3">
+      <h3 class="featured-pricing-heading">Pricing Table</h3>
+      <p>This should be used to tell a story and let your users know a little more about your product or service. How can you benefit them?</p>
+    </div>
+    <div class="container-fluid card-container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="card card-shadowless">
+            <div class="card-body">
+              <p class="plan-text card-text"><small>Free Plan</small></p>
+              <h3 class="card-title featured-pricing-heading price">FREE</h3>
+              <p class="per-month-p card-text">Per Month</p>
+              <p class="card-text">This should be used to tell a story and talk about your product or service.</p>
+              <button type="button" class="btn btn-primary pricing-btn">Get Started</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card card-shadow">
+            <hr class="blue-bar">
+            <div class="card-body">
+              <p class="plan-text card-text"><small>Professional Plan</small></p>
+              <h3 class="card-title featured-pricing-heading price">$ 29</h3>
+              <p class="per-month-p card-text">Per Month</p>
+              <p class="card-text">This should be used to tell a story and talk about your product or service.</p>
+              <button type="button" class="btn btn-primary pricing-btn">Get Started</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card card-shadowless">
+            <div class="card-body">
+              <p class="plan-text card-text"><small>Team Plan</small></p>
+              <h3 class="card-title featured-pricing-heading price">$ 49</h3>
+              <p class="per-month-p card-text">Per Month</p>
+              <p class="card-text">This should be used to tell a story and talk about your product or service.</p>
+              <button type="button" class="btn btn-primary pricing-btn">Get Started</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Last Section -->
+  <section>
+    <div class="container-fluid last-section-container">
+      <span class="call-us-span colored-span">CALL US: 0123456789</span>
+      <h1 class="big-heading">Get Best Business Deal<br>For Your Project</h1>
+      <p class="last-section-p">This should be used to tell a story and let your users know a little more about your product or service.<br>How can you benefit them?</p>
+      <button type="button" class="btn btn-primary btn-lg btn-last-section">CALL TO ACTION</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <hr class="footer-hr">
+    <div class="container-fluid footer-container">
+      <div class="row">
+        <div class="col-md-6 copy-right-col">
+          <p class="copy-right">2020 © Aykut Ulış. All Rights Reserved.</p>
+        </div>
+        <div class="col-md-6 social-col">
+          <i class="social-icon fab fa-instagram"></i>
+          <i class="social-icon fab fa-twitter"></i>
+          <i class="social-icon fab fa-facebook-f"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
